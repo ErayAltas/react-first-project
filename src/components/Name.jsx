@@ -1,28 +1,12 @@
-const mapData = [
-    {
-        id: 1,
-        name: 'eray',
-        job: 'eng'
-    },
-    {
-        id: 2,
-        name: 'osman',
-        job: 'dentist'
-    },
-]
+import Test from "./Test";
 
-const txt = ({ data }) => {
-    return (
-        <div>Benim adim {data}
-            {
-                mapData.array.forEach(element => {
-                    <div>{element.name}</div>
-                })
-            }
+const Component = ({ data }) => {
+  return (
+    <div>
+      Benim adim {data}
+      <Test />
+    </div>
+  );
+};
 
-        </div>
-
-    )
-}
-
-export default txt;
+export default Component;
