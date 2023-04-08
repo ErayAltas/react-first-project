@@ -5,7 +5,6 @@ import { AiFillAlert } from "react-icons/ai";
 function App() {
   const [count, setCount] = useState(0);
   const [color, setColor] = useState("red");
-  const data = "abc";
   const clickFunc = () => {
     setCount(count + 1);
     if (color === "red") {
@@ -21,11 +20,21 @@ function App() {
     setColor("purple");
   }, []);
 
+  const mapdata = {
+    name: "Eray",
+    job: "pc engineer",
+    salary: "500000",
+  };
+
   return (
     <div className="App">
       <div style={{ color: color }}>colorful text</div>
       {count}
-      <Name data={data} />
+      <Name data={mapdata} />
+      <div>my name is eray</div>
+      <div>my name is eray</div>
+      <h4 className="container">bootstrap test</h4>
+      <h4>bootstrap test</h4>
       <button onClick={clickFunc}>tıkla</button>
       <AiFillAlert />
     </div>
